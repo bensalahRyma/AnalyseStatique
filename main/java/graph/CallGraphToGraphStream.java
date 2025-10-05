@@ -18,7 +18,8 @@ public class CallGraphToGraphStream {
 
                 String eid = edgeId(f, tt);
                 if (g.getEdge(eid) == null) {
-                    g.addEdge(eid, f, tt, true); // directed
+                    g.addEdge(eid, f, tt, true);
+
                 }
             }
         });
@@ -26,7 +27,6 @@ public class CallGraphToGraphStream {
         return g;
     }
 
-    // ---------- helpers ----------
 
     private static void ensureNode(Graph g, String id) {
         if (g.getNode(id) == null) {

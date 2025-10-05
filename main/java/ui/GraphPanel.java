@@ -3,7 +3,7 @@ import javax.swing.*; import java.awt.*;
 
 import org.graphstream.graph.Node;
 import org.graphstream.ui.swing_viewer.ViewPanel;
-import org.graphstream.ui.swing_viewer.SwingViewer;   // ✅ bon package
+import org.graphstream.ui.swing_viewer.SwingViewer;
 
 import org.graphstream.ui.view.Viewer;
 import org.graphstream.graph.Graph;
@@ -62,7 +62,7 @@ public class GraphPanel extends JPanel {
         cam.setViewPercent(1.2);
     }
 
-    // ✅ FIX: itération portable sans getEachNode()/nodes()
+    //  itération portable sans getEachNode()/nodes()
     private void toggleLabels() {
         if (graph == null) return;
         labelsVisible = !labelsVisible;

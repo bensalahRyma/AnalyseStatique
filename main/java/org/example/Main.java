@@ -20,7 +20,6 @@ public class Main {
 
         Path src = Paths.get(a.getOrDefault("src", "."));
         int X = Integer.parseInt(a.getOrDefault("x", "20"));
-        // sous Windows, sépare le classpath avec ';' au lieu de ':'
         List<String> cp = a.containsKey("cp") ? List.of(a.get("cp").split("[;:]")) : List.of();
 
         // 1) Parse + collect
@@ -33,7 +32,7 @@ public class Main {
 
         // 3) Graphe d'appel
         var builder = new CallGraphBuilder();
-        for (var pu : units) pu.cu.accept(builder);  // si ParsedUnit est un record, utiliser pu.cu()
+        for (var pu : units) pu.cu.accept(builder);
         var gsGraph = CallGraphToGraphStream.toGraph(builder);
 
         // 4) UI Swing
