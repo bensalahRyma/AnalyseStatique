@@ -1,0 +1,12 @@
+# Java
+*.class
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Build dirs (au cas où)
+target/
+out/
