@@ -21,6 +21,19 @@
             <version>3.37.0</version>
         </dependency>
 
+        <!-- 🧠 Spoon: Framework d’analyse statique Java -->
+        <dependency>
+            <groupId>fr.inria.gforge.spoon</groupId>
+            <artifactId>spoon-core</artifactId>
+            <version>11.1.0</version>
+        </dependency>
+
+        <!-- 🧮 Eclipse Collections: utile pour manipuler des maps optimisées -->
+        <dependency>
+            <groupId>org.eclipse.collections</groupId>
+            <artifactId>eclipse-collections</artifactId>
+            <version>11.1.0</version>
+        </dependency>
 
         <!-- GraphStream (Swing UI) -->
         <dependency>
